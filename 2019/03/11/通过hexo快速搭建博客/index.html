@@ -5,21 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>vue生命周期 - 懒猫m</title>
+    <title>通过hexo快速搭建博客 - 懒猫m</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一昂杨,实例生命周期
-所有的 Vue 组件都是 Vue 实例，并且接受相同的选项对象即可 (一些根实例特有的选项除外)。
-实例生命周期也叫做：组件生命周期
+    <meta name="keywords" content="lanmaom,"> 
+    <meta name="description" content="一昂杨,windows系统使用hexo快速搭建blog前提环境准备环境(都有的话可以直接跳过):
 
-生命周期介绍
-vue生命周期钩子函数
-简单说：一,"> 
-    <meta name="author" content="懒猫m2"> 
+node环境
+github账号
+域名(可选)
+git环境
+
+一.node环境https://www.cnb,"> 
+    <meta name="author" content="懒猫m"> 
     <link rel="alternative" href="atom.xml" title="懒猫m" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="icon" href="/img/favicon.jpg"> 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     <link rel="stylesheet" href="/css/diaspora.css">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -179,6 +180,10 @@ vue生命周期钩子函数
 
 
     </div>
+    
+        <div class='side'>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#windows系统使用hexo快速搭建blog"><span class="toc-number">1.</span> <span class="toc-text">windows系统使用hexo快速搭建blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前提环境"><span class="toc-number">1.1.</span> <span class="toc-text">前提环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-node环境"><span class="toc-number">1.1.1.</span> <span class="toc-text">一.node环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-github账号"><span class="toc-number">1.1.2.</span> <span class="toc-text">二.github账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-域名"><span class="toc-number">1.1.3.</span> <span class="toc-text">三.域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-git环境"><span class="toc-number">1.1.4.</span> <span class="toc-text">四.git环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始搭建"><span class="toc-number">1.2.</span> <span class="toc-text">开始搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-在github上新建一个项目"><span class="toc-number">1.2.1.</span> <span class="toc-text">一.在github上新建一个项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-将github与git绑定"><span class="toc-number">1.2.2.</span> <span class="toc-text">二.将github与git绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-初始化hexo-并设置想要的皮肤"><span class="toc-number">1.2.3.</span> <span class="toc-text">三.初始化hexo(并设置想要的皮肤)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#下载-hexo"><span class="toc-number">1.2.3.0.1.</span> <span class="toc-text">下载 hexo</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#初始化-如果初始化不了-需要到一个空的文件夹下面初始化-初始化完成之后再复制进去即可"><span class="toc-number">1.2.3.0.2.</span> <span class="toc-text">初始化(如果初始化不了,需要到一个空的文件夹下面初始化,初始化完成之后再复制进去即可)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#然后编译"><span class="toc-number">1.2.3.0.3.</span> <span class="toc-text">然后编译</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#预览一下"><span class="toc-number">1.2.3.0.4.</span> <span class="toc-text">预览一下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#自带的皮肤挺丑-换一个皮肤的话-在当前目录的-themes文件夹下面-我用的-diaspora-皮肤"><span class="toc-number">1.2.3.0.5.</span> <span class="toc-text">自带的皮肤挺丑,换一个皮肤的话,在当前目录的 themes文件夹下面,我用的 diaspora 皮肤</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-绑定域名"><span class="toc-number">1.2.4.</span> <span class="toc-text">四.绑定域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五-配置你的主题和-你的网站icon"><span class="toc-number">1.2.5.</span> <span class="toc-text">五.配置你的主题和 你的网站icon</span></a></li></ol></li></ol></li></ol>
+        </div>
     
 </div>
 
